@@ -24,9 +24,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   overflow: hidden;
   background: #1d1d1d;
 }
+
 .main .movie_container {
   width: 100%;
   height: 100%;
@@ -47,36 +49,169 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid rebeccapurple;
 }
-
-.movie_container .movie_card .swiper {
-  width: 350px;
-  height: 430px;
-}
-
-.movie_container .movie_card .swiper-slide {
+.movie_container .movie_card .movie_content {
+  width: 90%;
+  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-  font-size: 22px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* 
+    - Movie content
+*/
+.movie_card .movie_content .content {
+  width: 40%;
+  height: auto;
+}
+.movie_content .content .title {
+  font-size: 5rem;
   font-weight: bold;
   color: #fff;
 }
-
-.movie_container .movie_card .swiper-slide:nth-child(1n) {
-  background-color: rgb(206, 17, 17);
+.movie_content .content .detail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #7c7c7c;
+  margin: 1.5rem 0;
+}
+.movie_content .content .detail .imdb {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.content .detail .imdb .imdb_title {
+  padding: 2px 6px;
+  background: #fff333;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  color: #121212;
+  font-weight: 300;
 }
 
-.movie_container .movie_card .swiper-slide:nth-child(2n) {
-  background-color: rgb(0, 140, 255);
+.movie_content .content .type {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.content .type .type_value {
+  padding: 2px 6px;
+  background: #fff333;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  color: #121212;
+  font-weight: 300;
+  cursor: pointer;
 }
 
-.movie_container .movie_card .swiper-slide:nth-child(3n) {
-  background-color: rgb(10, 184, 111);
+.movie_content .content .desc {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #636363;
+  margin-bottom: 2rem;
 }
 
-.movie_container .movie_card .swiper-slide:nth-child(4n) {
-  background-color: rgb(211, 122, 7);
+.movie_content .content .button_group {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.content .button_group .btn {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+.content .button_group .btn:active,
+.content .button_group .btn:focus,
+.content .button_group .btn:active:focus {
+  border: 1px solid #fff333;
+}
+.content .button_group .primary_btn {
+  background: #fff333;
+  color: #121212;
+  border: 1px solid #fff333;
+}
+.content .button_group .outline_btn {
+  background: transparent;
+  color: #fff333;
+  border: 1px solid #fff333;
+}
+
+/* 
+    - Movie Card (carousel)
+*/
+.movie_container .movie_card .movie_picture {
+  width: 35%;
+  height: auto;
+}
+.movie_container .movie_card .swiper {
+  width: 360px;
+  height: 450px;
+}
+
+.movie_container .movie_card .swiper-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.movie_container .movie_card .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie_container .movie_card .swiper-slide .overlay_info {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #676a64, transparent, transparent);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.movie_card .swiper-slide .overlay_info .season {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff333;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin: 0 0 20px 20px;
+}
+
+.movie_card .swiper-slide .overlay_info .episode {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff333;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin: 0 20px 20px 0;
+}
+
+.movie_container .swiper-button-prev,
+.movie_container .swiper-button-next {
+  color: #fff333;
 }
