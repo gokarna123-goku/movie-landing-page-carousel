@@ -19,7 +19,6 @@
         - SwiperJs Carousel CSS Link
       -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
 </head>
 
 <body>
@@ -28,113 +27,94 @@
         <!-- 
             - SwiperJs Carousel Container
          -->
-        <div class="movie_container swiper mySwiper">
+        <div class="swiper mySwiper movie_container">
             <div class="swiper-wrapper movie_wrapper">
                 <!-- 
                     - First Movie Carousel Container
-                -->
-                <div class="movie_card swiper-slide"
-                    style="background: linear-gradient(
-                        to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5)), url('./img/bg1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat">
+                 -->
+                <div class="swiper-slide movie_card"
+                    style="background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5)), url('./img/bg1.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
                     <div class="movie_content">
                         <!-- 
-                            - First Movie Carousel Content
-                        -->
+                            - Carousel Content Section
+                         -->
                         <div class="content">
-                            <!-- 
-                                -Title Section
-                            -->
+                            <!-- Title section -->
                             <h1 class="title">
-                                Spiderman - No Way Home
+                                SpiderMan - No Way Home
                             </h1>
-                            <!-- 
-                                - Detail Section (IMDB, Release Date, Duration, type)
-                            -->
+                            <!-- Details Section -->
                             <div class="detail">
-                                <!-- 
-                                    - IMDB
-                                -->
+                                <!-- IMDb -->
                                 <div class="imdb">
                                     <span class="imdb_title">IMDb</span>
                                     <span class="imdb_rating">8.5</span>
                                 </div>
-                                <!-- 
-                                    - Seperator
-                                -->
+                                <!-- Seperator -->
                                 <div class="seperator">|</div>
-                                <!-- 
-                                    - Release Date
-                                -->
-                                <div class="release_date">
-                                    2020
-                                </div>
-                                <!-- 
-                                    - Seperator
-                                -->
-                                <div class="seperator">|</div>
-                                <!-- 
-                                    - Duration
-                                -->
+                                <!-- Duration -->
                                 <div class="duration">
-                                    2h 30m
+                                    1h 30m
                                 </div>
-                                <!-- 
-                                    - Seperator
-                                -->
+                                <!-- Seperator -->
                                 <div class="seperator">|</div>
-                                <!-- 
-                                    - Type
-                                -->
+                                <!-- Release date -->
+                                <div class="date">
+                                    2021
+                                </div>
+                                <!-- Seperator -->
+                                <div class="seperator">|</div>
+                                <!-- Type -->
                                 <div class="type">
-                                    <span class="type_title">Sci-fi</span>
+                                    <span class="type_title">Sci-Fi</span>
                                     <span class="type_value">Movie</span>
                                 </div>
                             </div>
-                            <!-- 
-                                - Description Section
-                            -->
+                            <!-- Description -->
                             <p class="desc">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, velit consequuntur!
-                                Debitis velit placeat distinctio vitae, tempora dicta saepe, quod soluta quo earum,
-                                fugiat sint. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, quod?
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo est ea officia deleniti
+                                dolores atque at suscipit ad fugit sapiente, obcaecati consequatur incidunt.
+                                Perspiciatis rem, placeat reiciendis labore iste ab?
                             </p>
-                            <!-- 
-                                - Button
-                            -->
+                            <!-- Buttons -->
                             <div class="button_group">
-                                <button class="btn primary_btn">Play Now</button>
-                                <button class="btn outline_btn">Play Trailer</button>
+                                <button class="btn primary_btn">
+                                    Play Now
+                                </button><button class="btn outline_btn">
+                                    Play Trailer
+                                </button>
                             </div>
                         </div>
+
                         <!-- 
-                            - SwiperJs Carousel Wrapper
-                        -->
-                        <div class="swiper-wrapper movie_picture">
+                            - Swiper Movie Card carousel Section (another swiper carousel)
+                         -->
+                        <div class="movie_picture">
                             <div class="swiper mySwiper2">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="./img/frame1.jpg" alt="movie image">
+                                        <img src="./img//frame1.jpg" alt="Movie img">
                                         <div class="overlay_info">
                                             <div class="season">Action</div>
                                             <div class="episode">Adventure</div>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./img/frame2.jpg" alt="movie image">
+                                        <img src="./img//frame2.jpg" alt="Movie img">
                                         <div class="overlay_info">
                                             <div class="season">Action</div>
                                             <div class="episode">Adventure</div>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./img/frame3.jpg" alt="movie image">
+                                        <img src="./img//frame3.jpg" alt="Movie img">
                                         <div class="overlay_info">
                                             <div class="season">Action</div>
                                             <div class="episode">Adventure</div>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./img/frame4.jpg" alt="movie image">
+                                        <img src="./img//frame4.jpg" alt="Movie img">
                                         <div class="overlay_info">
                                             <div class="season">Action</div>
                                             <div class="episode">Adventure</div>
@@ -143,6 +123,7 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
                 <!-- 
@@ -150,79 +131,65 @@
                  -->
                 <div class="movie_card swiper-slide"
                     style="background: linear-gradient(
-                        to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('./img/bg2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                     to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('./img/bg2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
                     <div class="movie_content">
                         <!-- 
-                            - Second Movie Carousel Content
+                             - Second Movie Carousel Content
                         -->
                         <div class="content">
                             <!-- 
-                                -Title Section
-                             -->
+                                 -Title Section
+                            -->
                             <h1 class="title">
                                 Stranger things
                             </h1>
                             <!-- 
-                                - Detail Section (IMDB, Release Date, Duration, type)
-                             -->
+                                 - Detail Section (IMDB, Release Date, Duration, type)
+                            -->
                             <div class="detail">
-                                <!-- 
-                                    - IMDB
-                                 -->
+                                <!-- IMDb -->
                                 <div class="imdb">
                                     <span class="imdb_title">IMDb</span>
                                     <span class="imdb_rating">8.5</span>
                                 </div>
-                                <!-- 
-                                    - Seperator
-                                 -->
+                                <!-- Seperator -->
                                 <div class="seperator">|</div>
-                                <!-- 
-                                    - Release Date
-                                 -->
-                                <div class="release_date">
-                                    2020
-                                </div>
-                                <!-- 
-                                    - Seperator
-                                 -->
-                                <div class="seperator">|</div>
-                                <!-- 
-                                    - Duration
-                                 -->
+                                <!-- Duration -->
                                 <div class="duration">
-                                    5 Seasons
+                                    1h 30m
                                 </div>
-                                <!-- 
-                                    - Seperator
-                                 -->
+                                <!-- Seperator -->
                                 <div class="seperator">|</div>
-                                <!-- 
-                                    - Type
-                                 -->
+                                <!-- Release date -->
+                                <div class="date">
+                                    2021
+                                </div>
+                                <!-- Seperator -->
+                                <div class="seperator">|</div>
+                                <!-- Type-->
                                 <div class="type">
                                     <span class="type_title">Sci-fi</span>
                                     <span class="type_value">Series</span>
                                 </div>
                             </div>
                             <!-- 
-                                - Description Section
-                             -->
+                                 - Description Section
+                            -->
                             <p class="desc">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, velit consequuntur!
                                 Debitis velit placeat distinctio vitae, tempora dicta saepe, quod soluta quo earum,
                                 fugiat sint. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, quod?
                             </p>
                             <!-- 
-                                - Button
-                             -->
+                                 - Button
+                            -->
                             <div class="button_group">
                                 <button class="btn primary_btn">Play Now</button>
                                 <button class="btn outline_btn">Play Trailer</button>
                             </div>
                         </div>
                         <!-- 
-                            - SwiperJs Carousel Wrapper
+                             - SwiperJs Carousel Wrapper
                         -->
                         <div class="swiper-wrapper movie_picture">
                             <div class="swiper mySwiper2">
@@ -264,6 +231,7 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
+
     </div>
 
     <!-- 
@@ -277,8 +245,8 @@
     -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-            loop: true,
             cssMode: true,
+            loop: true,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
@@ -296,17 +264,11 @@
         var swiper2 = new Swiper(".mySwiper2", {
             effect: "cards",
             grabCursor: true,
+            // autoplay will be add later
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
-            },
-            // initialSlide: 2,
-            // speed: 500,
-            // loop: true,
-            // rotate: true,
-            // mousewheel: {
-            //     invert: false,
-            // },
+            }
         });
     </script>
 
