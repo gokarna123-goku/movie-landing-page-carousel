@@ -15,13 +15,136 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- 
+        - Font Awesome Link
+     -->
+    <!-- 
+        - SwiperJs Carousel CSS Link
+      -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
 
     <div class="main">
-        This is the movie hero carousel project.
+        <!-- 
+            - SwiperJs Carousel Container
+         -->
+        <div class="movie_container swiper mySwiper">
+            <div class="swiper-wrapper movie_wrapper">
+                <!-- 
+                    - First Movie Carousel Container
+                -->
+                <div class="movie_card swiper-slide"
+                    style="background: linear-gradient(
+                        to right,
+                        rgba(0, 0, 0, 0.8),
+                        rgba(0, 0, 0, 0.5)
+                      ), url('https://cdn.pixabay.com/photo/2016/11/15/07/09/photo-manipulation-1825450_1280.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat">
+                    <!-- 
+                        - First Movie Carousel Content
+                    -->
+                    fsdkjfhsdjkfsdk
+                    <!-- 
+                        - SwiperJs Carousel Wrapper
+                    -->
+                    <!-- kjkjhkh kjhkh khkjh -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper mySwiper2 movie_picture">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">Slide 1</div>
+                                <div class="swiper-slide">Slide 2</div>
+                                <div class="swiper-slide">Slide 3</div>
+                                <div class="swiper-slide">Slide 4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 
+                    - Second Movie Carousel Container
+                 -->
+                <div class="movie_card swiper-slide"
+                    style="background: linear-gradient(
+                        to right,
+                        rgba(0, 0, 0, 0.8),
+                        rgba(0, 0, 0, 0.5)
+                      ), url('https://cdn.pixabay.com/photo/2020/09/01/19/58/woman-5536425_1280.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                    <!-- 
+                        - First Movie Carousel Content
+                    -->
+                    fsdkjfhsdjkfsdkkjhkhkjhkhkjhkkjh
+                    <!-- 
+                        - SwiperJs Carousel Wrapper
+                    -->
+                    <!-- kjkjhkh kjhkh khkjh -->
+                    <div class="swiper-wrapper movie_picture">
+                        <div class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">Slide 1</div>
+                                <div class="swiper-slide">Slide 2</div>
+                                <div class="swiper-slide">Slide 3</div>
+                                <div class="swiper-slide">Slide 4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
     </div>
+
+    <!-- 
+        - SwiperJs Carousel JavaScript Link
+     -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- 
+        - Initialize Swiper (for movie or series card)
+    -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            // spaceBetween: 30,
+            // centeredSlides: true,
+            // loop: true,
+            // // autoplay: {
+            // //     delay: 2500,
+            // //     disableOnInteraction: false,
+            // //     grabCursor: false,
+            // // },
+            // navigation: {
+            //     nextEl: ".swiper-button-next",
+            //     prevEl: ".swiper-button-prev",
+            // },
+            // grabCursor: false,
+
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
+
+
+    <!-- 
+        - Initialize Swiper (for movie picture or series episode)
+     -->
+    <script>
+        var swiper2 = new Swiper(".mySwiper2", {
+            loop: true,
+            effect: "cards",
+            grabCursor: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
 
 </body>
 
