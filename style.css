@@ -114,7 +114,7 @@ a {
 .movie_content .content .desc {
   font-size: 1.05rem;
   font-weight: 400;
-  color: #636363;
+  color: #aaaaaa;
   margin-bottom: 2rem;
 }
 
@@ -158,8 +158,8 @@ a {
   height: auto;
 }
 .movie_container .movie_card .swiper {
-  width: 360px;
-  height: 450px;
+  width: 400px;
+  height: 500px;
 }
 
 .movie_container .movie_card .swiper-slide {
