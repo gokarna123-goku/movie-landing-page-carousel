@@ -12,15 +12,45 @@
 }
 
 /* 
+  - Customize scrollbar
+*/
+
+/* width */
+::-webkit-scrollbar {
+  background: #121212;
+  width: 10px;
+  /* border-radius: 10px; */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #121212;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #575757;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #837c19;
+  border-radius: 10px;
+}
+
+/* 
     - Main Section Styling
 */
 
 .main {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   overflow: hidden;
   background: #1d1d1d;
 }
@@ -31,7 +61,7 @@
 
 .main .movie_container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .movie_container .movie_wrapper {
@@ -185,7 +215,7 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, #676a64, transparent, transparent);
+  background: linear-gradient(to top, #0f2027, transparent, transparent);
   background-repeat: no-repeat;
   background-size: cover;
 }
