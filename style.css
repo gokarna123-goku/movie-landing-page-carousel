@@ -11,6 +11,20 @@
   font-family: "Roboto", sans-serif;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff333;
+  transition: all 0.3s ease-out;
+}
+
+a:hover {
+  color: #b0a61d;
+}
+
 /* 
   - Customize scrollbar
 */
@@ -53,6 +67,7 @@
   flex-direction: column;
   overflow: hidden;
   background: #1d1d1d;
+  row-gap: 1.5rem;
 }
 
 /* 
@@ -245,4 +260,34 @@
 .movie_container .swiper-button-prev,
 .movie_container .swiper-button-next {
   color: #fff333;
+}
+
+/* 
+  - Upcoming Movies Styling
+*/
+
+.upcoming_movies {
+  width: 90%;
+  height: auto;
+  padding: 20px;
+  color: #7c7c7c;
+}
+
+.upcoming_movies .tag_section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.upcoming_movies .tag_section h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+}
+.upcoming_movies .tag_section h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
 }
